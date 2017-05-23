@@ -1,0 +1,320 @@
+﻿@model cWay.Models.Truck
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Truck</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckEngineHours)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckEngineHours)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckSuspensionType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckSuspensionType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckMileage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckMileage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckVin)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckVin)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckIsSold)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckIsSold)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckHas2Tanks)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckHas2Tanks)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckTank1Size)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckTank1Size)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckTank2Size)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckTank2Size)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckBrakeCondition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckBrakeCondition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckTireCondition)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckTireCondition)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckHasSleeper)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckHasSleeper)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckIsListed)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckIsListed)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckDealerNotes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckDealerNotes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckDealerDateOfPurchase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckDealerDateOfPurchase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckDealerFinalSalePrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckDealerFinalSalePrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckDealerImprovementCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckDealerImprovementCost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckDealerDateOfSale)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckDealerDateOfSale)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckDealerPurchaseCost)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckDealerPurchaseCost)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckCabStyle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckCabStyle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckEngineModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckEngineModel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckMake)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckMake)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckModel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckTransmissionType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckTransmissionType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckVehicleType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckVehicleType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckBrakeType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckBrakeType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckTransmissionSpeeds)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckTransmissionSpeeds)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckWheelBaseInches)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckWheelBaseInches)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckWheelSizeFront)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckWheelSizeFront)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckWheelSizeRear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckWheelSizeRear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckTurbo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckTurbo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckAxleConfiguration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckAxleConfiguration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TruckEngineMake)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TruckEngineMake)
+        </dd>
+
+        <dt>
+            Photos
+        </dt>
+            <dd>
+                <img src="~/Images/@Model.Images.Where(f => f.TruckID == Model.TruckID)" alt="BrokenImage" />
+            </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TruckID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
