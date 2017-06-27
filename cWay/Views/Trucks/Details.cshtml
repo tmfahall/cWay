@@ -309,9 +309,12 @@
         <dt>
             Photos
         </dt>
+        @foreach (var img in Model.Images)
+        {
             <dd>
-                <img src="~/Images/@Model.Images.Where(f => f.TruckID == Model.TruckID)" alt="BrokenImage" />
+                <img src="~/Uploads/@Model.TruckVin/@img.ImageFileName" alt="BrokenImage" />
             </dd>
+        }
     </dl>
 </div>
 <p>

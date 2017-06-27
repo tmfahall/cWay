@@ -52,6 +52,9 @@ namespace cWay.Controllers
             {
                 if (upload != null)
                 {
+                    var folderNamedVinNumber = System.IO.Path.Combine(Server.MapPath("~/Uploads/"), truck.TruckVin.ToString());
+                    System.IO.Directory.CreateDirectory(folderNamedVinNumber);
+
                     truck.Images = new List<Image>();
                     foreach (var file in upload)
                     {
@@ -62,7 +65,7 @@ namespace cWay.Controllers
                             {
                                 ImageFileName = Guid.NewGuid().ToString() + System.IO.Path.GetExtension(file.FileName)
                             };
-                            var path = System.IO.Path.Combine(Server.MapPath("~/Uploads"), photo.ImageFileName);
+                            var path = System.IO.Path.Combine(folderNamedVinNumber, photo.ImageFileName);
                             file.SaveAs(path);
                         truck.Images.Add(photo);
                         }
